@@ -1,0 +1,223 @@
+.intro {
+
+
+    background-color: #F5F5F5;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: rem(46px);
+        height: rem(10px);
+        background-color: #C4C4C4;
+        position: absolute;
+        bottom: rem(-3px);
+        left: 81%;
+        transform: rotate(320deg);
+    }
+}
+
+
+
+.main-intro {
+    @include height100();
+    @include flexbox();
+
+
+}
+
+.left-block {}
+
+.left-block-promo {
+    @include tablets {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+
+
+    }
+}
+
+.promo {
+
+
+    &__title {
+        margin-top: rem(-90px);
+        font-family: Play;
+        font-style: normal;
+        font-weight: bold;
+        font-size: rem(48px);
+        line-height: rem(52px);
+        text-transform: uppercase;
+        color: #292929;
+        padding-right: 20%;
+
+        // max-width: rem(400px);
+
+
+        @include tablets {
+
+            padding: 0 8%;
+
+            &::before {
+                content: url("../img/hello/beatstablet.png");
+
+
+            }
+
+        }
+
+        @include phones {
+            padding: 0 4%;
+            font-size: rem(32px);
+            line-height: rem(36px);
+        }
+
+    }
+
+
+
+    &__subtitle {
+
+
+        margin-top: rem(24px);
+        color: #000000;
+        font-family: Play;
+        font-size: rem(18px);
+        font-weight: 400;
+        line-height: rem(25px);
+        max-width: rem(332px);
+        margin-bottom: rem(50px);
+
+        @include phones {
+            line-height: rem(20px);
+            margin-bottom: rem(26px);
+            margin-top: rem(14px);
+        }
+    }
+
+}
+
+.promo__button {
+    padding: rem(18px) rem(41px);
+    background-color: $cr;
+    border-radius: rem(100px);
+    width: rem(163px);
+    height: rem(54px);
+    font-family: Play;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffff;
+    margin-bottom: rem(95px);
+}
+
+.left-block-advantages {
+    @include tablets {
+        width: 100%;
+
+    }
+
+    padding: rem(0px) 0 rem(40px) rem(14px);
+
+}
+
+.left-block-items {
+
+    @include tablets {
+        display: none;
+    }
+
+    @include flexbox();
+    margin-right: rem(8px);
+
+    &__img {
+        margin-right: rem(11px);
+    }
+
+    &__text {}
+}
+
+
+.advantages-item {
+    @include flexbox();
+    width: rem(166px);
+    margin-right: rem(15px);
+    margin-top: rem(88px);
+
+    &__img {
+        margin-right: rem(11px);
+    }
+
+    &__text {
+        font-family: Play;
+        font-size: rem(16px);
+        line-height: rem(18px);
+        color: #292929;
+    }
+}
+
+.right-block {
+    @include tablets {
+        display: none;
+    }
+
+    @include flexbox();
+    align-items: center;
+    position: relative;
+    right: rem(120px);
+    bottom: rem(100px);
+}
+
+
+
+
+.intro-list-items {
+
+    @include tablets {
+        display: none;
+    }
+
+    list-style-type: none;
+    position: fixed;
+    right: 5%;
+    top: 40%;
+
+    &__item {
+        width: rem(20px);
+        height: rem(20px);
+        border-radius: 50%;
+        border: rem(1px) solid transparent;
+        margin-bottom: rem(14px);
+        margin-bottom: rem(7px);
+        position: relative;
+
+        &:hover::after,
+        &.active::after {
+            background-color: $cr;
+        }
+
+        &::after {
+            content: '';
+            width: rem(6px);
+            height: rem(6px);
+            background-color: #ACACAC;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &.active,
+        &:hover {
+
+            border-color: $cr;
+
+        }
+    }
+}

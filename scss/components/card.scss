@@ -1,0 +1,106 @@
+.card {
+	@include height100();
+	background-color: #F8FAF9;
+}
+
+.card-wrapper {
+	@include flexbox();
+	padding: rem(95px) 0;
+}
+
+.card-left-block {
+	margin-right: rem(60px);
+}
+
+.card-right-block {
+
+	&__button {
+		margin-bottom: rem(25px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #9A9A9A;
+		display: inline-flex;
+		border-radius: rem(4px);
+		width: rem(91px);
+		height: rem(91px);
+
+
+	}
+
+	&__title {
+		font-family: Play;
+		font-weight: bold;
+		font-size: rem(36px);
+		line-height: rem(42px);
+		text-transform: uppercase;
+		color: #292929;
+		margin-bottom: rem(24px);
+	}
+
+	&__subtitle {
+		font-family: Play;
+		font-size: rem(16px);
+		line-height: rem(19px);
+		color: #666666;
+		margin-bottom: rem(24px);
+	}
+}
+
+.card-right-block-options {
+	@include flexbox();
+}
+
+.card-options-card {
+	min-width: rem(104px);
+	margin-right: rem(44px);
+}
+
+.options-card {
+
+	&__title {
+		font-family: Play;
+		font-size: rem(16px);
+		line-height: rem(19px);
+		color: #666666;
+	}
+
+	&__subtitle {
+		font-family: Play;
+		font-weight: bold;
+		font-size: rem(18px);
+		line-height: rem(21px);
+		color: #000000;
+		margin-bottom: rem(24px);
+
+	}
+}
+
+.card-price {
+	@include flexbox();
+
+	&__text {
+		font-family: Play;
+		font-style: normal;
+		font-weight: normal;
+		font-size: rem(36px);
+		line-height: rem(60px);
+		text-transform: uppercase;
+		color: #151515;
+	}
+
+	&__button {}
+}
+
+.card__button {
+	background-color: $cr;
+	border-radius: rem(100px);
+	width: rem(163px);
+	height: rem(54px);
+	font-family: Play;
+	font-style: normal;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffff;
+	margin-left: rem(12px);
+}

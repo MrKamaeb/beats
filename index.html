@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
@@ -19,25 +19,30 @@
 					<a href="" class="img__link"><img src="./img/hello/logo.svg" alt=""></a>
 					<nav class="header-nav">
 						<ul class="header-nav-list">
-							<li class="list-item">О нас</li>
-							<li class="list-item">Наушники</li>
-							<li class="list-item">Команда</li>
-							<li class="list-item">Цвета</li>
-							<li class="list-item">Отзывы</li>
-							<li class="list-item">Как мы работаем</li>
-							<li class="list-item">Контакты</li>
+							<li class="list-item"><a class="list-item__link" href="">О нас</a></li>
+							<li class="list-item"><a class="list-item__link" href=""> Наушники</a></li>
+							<li class="list-item"><a class="list-item__link" href=""> Команда</a></li>
+							<li class="list-item"><a class="list-item__link" href=""> Цвета </a></li>
+							<li class="list-item"><a class="list-item__link" href=""> Отзывы</a></li>
+							<li class="list-item"><a class="list-item__link" href=""> Как мы работаем</a></li>
+							<li class="list-item"><a class="list-item__link" href=""> Контакты</a></li>
 						</ul>
 					</nav>
-					<div class="contacts">
+					<div class="contacts head">
 						<a href="tel:+78009039090" class="contacts__phone"> <img src="./img/hello/phone.svg" alt=""
 								class="contact__phone"> 8 800 903 90 90</a>
 					</div>
+					<a href="" class="hamburger">
+						<span class="hamburger__plank"></span>
+						<span class="hamburger__plank"></span>
+						<span class="hamburger__plank"></span>
+					</a>
 				</header>
 				<div class="main-intro">
 					<div class="left-block-advantages">
 						<div class="left-block-promo">
-							<p class="promo__title">Беспроводные наушники </p>
-							<p class="promo__title-name">Beats Solo 3</p>
+							<p class="promo__title">Беспроводные наушники Beats Solo 3 </p>
+							<!-- <p class="promo__title-name">Beats Solo 3</p> -->
 							<p class="promo__subtitle">Встречайте новую версию наушников
 								из линейки Powerbeats.</p>
 							<a class="promo__button">Заказать</a>
@@ -77,27 +82,34 @@
 						<div class="features-item__img">
 							<img class="img" src="./img/features/battery.svg" alt="">
 						</div>
+						<div class="features-item-text">
 						<div class="features-item__title">40 часов работы</div>
 						<div class="features-item__subtitle">Наушники Beats Solo3 могут работать
 							до 40 часов без подзарядки, чтобы вы
 							могли пользоваться ими каждый день.</div>
+						</div>
+						
 					</li>
 					<li class="features-item">
 						<div class="features-item__img">
 							<img src="./img/features/dinamic.svg" alt="">
 						</div>
+						<div class="features-item-text">
 						<div class="features-item__title">Фирменное звучание</div>
 						<div class="features-item__subtitle">Фирменное звучание Beats в наушниках
 							с технологией Bluetooth класса
 							1 будет сопровождать вас повсюду —
 							куда бы вы ни отправились.</div>
+						</div>
 					</li>
 					<li class="features-item">
 						<div class="features-item__img"><img src="./img/features/clock.svg" alt=""></div>
+						<div class="features-item-text">
 						<div class="features-item__title">Быстрая зарядка</div>
 						<div class="features-item__subtitle">Благодаря технологии Fast Fuel
 							всего через 5 минут зарядки вы
 							сможете слушать музыку ещё 3 часа.</div>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -107,7 +119,7 @@
 				<div class="card-wrapper">
 					<div class="card-left-block"><img src="./img/card/Ellipse 6.png" alt=""></div>
 					<div class="card-right-block">
-						<div class="card-right-block__button"><img src="./img/card/click.svg" alt=""></div>
+						<div class="card-right-block__button"><img src="./img/card/settings.svg" alt=""></div>
 						<p class="card-right-block__title">beats solo 3. цвет
 							«атласное серебро»</p>
 						<p class="card-right-block__subtitle">Беспроводные наушники Beats Solo3 готовы к работе в любой
@@ -148,9 +160,9 @@
 					</div>
 				</div>
 				<div class="reviews-people-icons">
-					<img src="./img/review/1.png" alt="">
-					<img src="./img/review/2.png" alt="">
-					<img src="./img/review/3.png" alt="">
+					<img class="people-icons__icon active" src="./img/review/belle (1).jpg" alt="">
+					<img class="people-icons__icon" src="./img/review/rew2.jpg" alt="">
+					<img class="people-icons__icon" src="./img/review/rew3.jpg" alt="">
 				</div>
 			</div>
 		</section>
@@ -229,11 +241,39 @@
 				</form>
 			</div>
 		</section>
-
-				</form>
-			</div>
+		<section class="contacts-footer">
+			<div class="map"><img src="./img/contacts/map (1).jpg" alt="" class="map_img"></div>	
+			<div class="container">
+			<footer class="footer">
+				<div class="footer-contacts">
+					<p class="footer-contacts__text">
+						Москва, ул.Новый Арбат, д.31/12
+					</p>
+					<div class="contacts ">
+						<a href="tel:+78009039090" class="contacts__phone fot"> <svg class="phone-icon">
+							<use xlink:href="./img/contacts/sprite.svg#phone"></use>
+						</svg> 8 800 903 90 90</a>
+					</div>
+				</div>
+				<div class="footer-socials">
+					<ul class="footer-socials__list">
+						<li class="footer-socials__item"><svg class="social-icon">
+							<use xlink:href="./img/contacts/sprite.svg#vk"></use>
+						</svg></li>
+						<li class="footer-socials__item"><svg class="social-icon active">
+							<use xlink:href="./img/contacts/sprite.svg#facebook"></use>
+						</svg></li>
+						<li class="footer-socials__item"><svg class="social-icon">
+							<use xlink:href="./img/contacts/sprite.svg#instagram"></use>
+						</svg></li>
+						<li class="footer-socials__item"><svg class="social-icon">
+							<use xlink:href="./img/contacts/sprite.svg#telegram"></use>
+						</svg></li>
+					</ul>
+				</div>
+			</footer>
+		</div>
 		</section>
-
 	</div>
 	<ul class="intro-list-items">
 		<li class="intro-list-items__item active"></li>

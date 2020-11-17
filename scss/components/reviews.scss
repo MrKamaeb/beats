@@ -1,0 +1,139 @@
+.reviews {
+	@include height100();
+	padding: rem(64px) 0 rem(68px) 0;
+	position: relative;
+
+	&__title {
+		font-family: Play;
+		font-weight: bold;
+		font-size: rem(48px);
+		line-height: rem(52px);
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: rem(32px);
+		position: relative;
+		z-index: 10;
+
+
+	}
+
+	&::before {
+		position: absolute;
+		bottom: rem(-15px);
+		left: 2%;
+		content: '';
+		width: rem(35px);
+		height: rem(35px);
+		border-radius: 50%;
+		background-color: #868686;
+	}
+}
+
+.reviews-card {
+
+	@include tablets {
+		flex-direction: column;
+		text-align: center;
+		padding-top: 56px;
+	}
+
+	background: #F8FAF9;
+	padding: rem(42px);
+	@include flexbox();
+	margin-bottom: rem(20px);
+	position: relative;
+
+	&::before {
+		top: -12%;
+		left: 45%;
+		position: absolute;
+		border-radius: 50%;
+		content: "";
+		width: 83px;
+		height: 83px;
+		background-color: #fff;
+	}
+
+	&__photo {
+		margin-right: rem(48px);
+
+		@include tablets {
+			margin-bottom: rem(35px);
+			margin-right: 0px;
+
+		}
+
+		img {
+			@include tablets {
+				width: rem(130px);
+				height: rem(130px);
+				;
+
+			}
+		}
+
+	}
+}
+
+.reviews-card-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+	&__title {
+		font-family: Play;
+		font-weight: bold;
+		font-size: rem(24px);
+		line-height: rem(28px);
+		color: #292929;
+		margin-bottom: rem(26px);
+	}
+
+	&__subtitle {
+		font-family: Play;
+		font-size: rem(16px);
+		line-height: rem(19px);
+		color: #666666;
+		margin-bottom: rem(38px);
+	}
+
+	&__name {
+		font-family: Play;
+		font-weight: bold;
+		font-size: rem(18px);
+		line-height: rem(21px);
+		color: #292929;
+	}
+}
+
+.reviews-people-icons {
+	text-align: center;
+
+	img {
+		margin-left: rem(5px);
+	}
+}
+
+.people-icons__icon {
+
+	width: rem(74px);
+	height: rem(74px);
+	border-radius: 50%;
+
+	@include tablets {
+		margin-top: 35px;
+		;
+
+	}
+
+	&.active {
+		border: rem(4px) solid $cr;
+
+	}
+
+	&:hover {
+		border: rem(4px) solid $cr;
+
+	}
+}

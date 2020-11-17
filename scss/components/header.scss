@@ -1,0 +1,66 @@
+.header {
+    padding: rem(22px) rem(0px) rem(47px) rem(16px);
+    @include flexbox();
+    align-items: flex;
+
+}
+
+.img {
+
+    &__link {
+        margin-right: rem(38px);
+    }
+}
+
+.header-nav {
+    @include tablets {
+        display: none;
+    }
+}
+
+.header-nav-list {
+    @include flexbox();
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list-item {
+    margin-top: 10px;
+    margin-right: rem(27px);
+
+
+    &__link {
+        font-family: Alegreya Sans;
+        font-size: rem(18px);
+        line-height: rem(20px);
+        color: #292929;
+        white-space: nowrap;
+
+    }
+}
+
+
+
+.contacts {
+
+
+    &.head {
+        @include tablets {
+            display: none;
+        }
+    }
+
+
+    margin-left: rem(28px);
+
+    &__phone {
+        font-family: Play;
+        font-size: rem(21px);
+        line-height: rem(18px);
+        color: #292929;
+        white-space: nowrap;
+
+    }
+}
+
+.contact__phone {}
