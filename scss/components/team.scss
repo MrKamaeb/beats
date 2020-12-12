@@ -1,0 +1,60 @@
+.team {
+
+    height: 100vh;
+    padding: 72px 80px 50px 80px;
+
+    &__title {
+
+        font-family: Play;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        background-color: #fff;
+
+
+
+
+
+    }
+}
+
+.team-list-desktop {
+    display: flex;
+}
+
+.team-item {
+    position: relative;
+    margin-right: 20px;
+}
+
+.team-member {
+    height: 290px;
+    width: 220px;
+
+    &__img {}
+}
+
+.team-content {
+    position: absolute;
+    top: 100%;
+    overflow: hidden;
+    height: 0;
+
+    &__block {}
+
+    &__title {
+        font-family: Play;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+
+    }
+
+    &__subtitle {
+        font-family: Play;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #666666;
+    }
+}

@@ -116,6 +116,9 @@
 }
 
 .left-block-advantages {
+
+    width: 50%;
+
     @include tablets {
         width: 100%;
 
@@ -126,6 +129,7 @@
 }
 
 .left-block-items {
+
 
     @include tablets {
         display: none;
@@ -144,12 +148,11 @@
 
 .advantages-item {
     @include flexbox();
-    width: rem(166px);
-    margin-right: rem(15px);
     margin-top: rem(88px);
 
+
     &__img {
-        margin-right: rem(11px);
+        margin-right: rem(8px);
     }
 
     &__text {
@@ -161,6 +164,8 @@
 }
 
 .right-block {
+    width: 50%;
+
     @include tablets {
         display: none;
     }
@@ -168,8 +173,8 @@
     @include flexbox();
     align-items: center;
     position: relative;
-    right: rem(120px);
-    bottom: rem(100px);
+    right: rem(20px);
+    bottom: rem(80px);
 }
 
 

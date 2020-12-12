@@ -2,6 +2,7 @@
 
 $tablets:768px;
 $phones:480px;
+$features: 666px;
 
 
 // normolize
@@ -28,7 +29,6 @@ $phones:480px;
 	position: relative;
 	width: 100%;
 	min-height: 100%;
-	overflow: hidden;
 
 	&.loaded {}
 }
@@ -56,3 +56,4 @@ $phones:480px;
 @import "./components/hamburger.scss";
 @import "./components/contacts.scss";
 @import "./components/footer.scss";
+@import "./components/team.scss";

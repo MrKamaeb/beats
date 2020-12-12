@@ -1,11 +1,19 @@
+.contacts-footer {
+    position: relative;
+}
+
 .footer {
-    display: flex;
-    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     padding: rem(20px) rem(54px) rem(20px) rem(86px);
 
     @include tablets {
         padding: rem(30px) rem(36px) rem(30px) rem(30px);
     }
+
+    background-color: #fff;
 
     @include phones {
         display: block;
@@ -13,9 +21,20 @@
     }
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include phones {
+        justify-content: center;
+    }
+}
+
 .footer-contacts {
 
     &__text {
+
         font-family: Play;
         font-size: 18px;
         line-height: 24px;
@@ -23,6 +42,7 @@
 
         @include phones {
             margin-bottom: 12px;
+            margin: auto;
         }
     }
 }
@@ -72,12 +92,21 @@
 }
 
 .footer-socials {
+    @include phones {
+        margin: auto;
+    }
+
 
     &__list {
         display: flex;
+        justify-content: center;
+        text-align: center;
+        text-align: center;
+        margin: auto;
 
         @include phones {
             justify-content: center;
+
         }
     }
 }

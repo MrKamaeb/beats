@@ -13,3 +13,9 @@
         @content;
     }
 }
+
+@mixin features {
+    @media screen and (max-width: $features) {
+        @content;
+    }
+}

@@ -37,6 +37,8 @@
         }
 
 
+
+
     }
 
     &::before {
@@ -63,6 +65,10 @@
     @include phones {
         flex-direction: column;
     }
+
+    @include features {
+        flex-direction: column;
+    }
 }
 
 .features-item {
@@ -79,6 +85,12 @@
 
     }
 
+    @include features {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
 
 
     &__img {
@@ -92,6 +104,10 @@
         margin-bottom: rem(24px);
 
         @include phones {
+            margin-right: 12px;
+        }
+
+        @include features {
             margin-right: 12px;
         }
 
@@ -111,6 +127,10 @@
             text-align: left;
         }
 
+        @include features {
+            text-align: left;
+        }
+
     }
 
     &__subtitle {
@@ -123,7 +143,11 @@
 
         @include phones {
             text-align: left;
-            min-width: rem(280px);
+
+        }
+
+        @include features {
+            text-align: left;
         }
 
 

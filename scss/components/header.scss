@@ -1,7 +1,8 @@
 .header {
-    padding: rem(22px) rem(0px) rem(47px) rem(16px);
+    padding: rem(22px) rem(0px) rem(47px) rem(0px);
     @include flexbox();
-    align-items: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -25,7 +26,6 @@
 }
 
 .list-item {
-    margin-top: 10px;
     margin-right: rem(27px);
 
 
@@ -45,13 +45,14 @@
 
 
     &.head {
+
         @include tablets {
             display: none;
         }
     }
 
 
-    margin-left: rem(28px);
+    margin-left: auto;
 
     &__phone {
         font-family: Play;

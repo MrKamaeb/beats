@@ -32,11 +32,11 @@
 						<a href="tel:+78009039090" class="contacts__phone"> <img src="./img/hello/phone.svg" alt=""
 								class="contact__phone"> 8 800 903 90 90</a>
 					</div>
-					<a href="" class="hamburger">
-						<span class="hamburger__plank"></span>
-						<span class="hamburger__plank"></span>
-						<span class="hamburger__plank"></span>
-					</a>
+					<div class="hamburger" id="toggle">
+						<span class="hamburger__plank hamburger__plank--top"></span>
+						<span class="hamburger__plank hamburger__plank--middle"></span>
+						<span class="hamburger__plank hamburger__plank--bottom"></span>
+					</div>
 				</header>
 				<div class="main-intro">
 					<div class="left-block-advantages">
@@ -117,14 +117,50 @@
 		<section class="card">
 			<div class="container">
 				<div class="card-wrapper">
-					<div class="card-left-block"><img src="./img/card/Ellipse 6.png" alt=""></div>
-					<div class="card-right-block">
-						<div class="card-right-block__button"><img src="./img/card/settings.svg" alt=""></div>
-						<p class="card-right-block__title">beats solo 3. цвет
+					<div class="product-slider-arrows">
+						<a href="" class="product-slider__arrow product-slider__arrow-prev"></a>
+						<a href="" class="product-slider__arrow product-slider__arrow-next"></a>
+					</div>
+					<div class="card-img-block"><img class="card-img-block__img" src="./img/card/Ellipse 6.png" alt=""></div>
+					<div class="card-block">
+						<div class="card-block__ingredients ">
+							<img src="img/card/settings.svg" alt="">
+							<div class="ingredients-components">
+								<ul class="ingredients-components-list">
+									<li class="ingredients-components-item">
+										<img src="img/card/icon.conponents/grape.svg" alt="" class="ingredients-components-item__img">
+										<div class="ingredients-components-item__text">Bluetooth</div>
+										<div class="ingredients-components-item__text left">4.0</div>
+									</li>
+									<li class="ingredients-components-item">
+										<img src="img/card/icon.conponents/nut.svg" alt="" class="ingredients-components-item__img">
+										<div class="ingredients-components-item__text">Дальность</div>
+										<div class="ingredients-components-item__text left">12 м</div>
+									</li>
+									<li class="ingredients-components-item">
+										<img src="img/card/icon.conponents/almond.svg" alt="" class="ingredients-components-item__img">
+										<div class="ingredients-components-item__text">Зарядка</div>
+										<div class="ingredients-components-item__text left">3 ч</div>
+									</li>
+									<li class="ingredients-components-item">
+										<img src="img/card/icon.conponents/washing-powder.svg" alt="" class="ingredients-components-item__img">
+										<div class="ingredients-components-item__text">Вес</div>
+										<div class="ingredients-components-item__text left">215гр</div>
+									</li>
+									<li class="ingredients-components-item">
+										<img src="img/card/icon.conponents/apitherapy.svg" alt="" class="ingredients-components-item__img">
+										<div class="ingredients-components-item__text">Гарантия</div>
+										<div class="ingredients-components-item__text left">1 год</div>
+									</li>
+								</ul>
+							</div>
+						
+						</div>
+						<p class="card-block__title">beats solo 3. цвет
 							«атласное серебро»</p>
-						<p class="card-right-block__subtitle">Беспроводные наушники Beats Solo3 готовы к работе в любой
+						<p class="card-block__subtitle">Беспроводные наушники Beats Solo3 готовы к работе в любой
 							момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</p>
-						<div class="card-right-block-options">
+						<div class="card-block-options">
 							<div class="card-options-card">
 								<p class="options-card__title">Зарядка</p>
 								<div class="options-card__subtitle">2 часа</div>
@@ -144,26 +180,132 @@
 				</div>
 			</div>
 		</section>
+		<section class="team">
+			<div class="container">
+				<h2 class="section__title">Командa</h2>
+				<ul class="team-list-desktop">
+					<li class="team-item">
+						<div class="team-member">
+							<img src="img/team/team1.jpg" alt="" class="team-member__img">
+						</div>
+						<button class="team__title">Борис Федорович</button>
+						<div class="team-content">
+							<div class="team-content__block">
+							 <div class="team-content__title">Главный технолог</div>
+							 <div class="team-content__subtitle">Отвечает за вкусовые качества 
+								и калорийность.
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="team-item">
+						<div class="team-member">
+							<img src="img/team/team2.jpg" alt="" class="team-member__img">
+						</div>
+						<button class="team__title">Алла Иванова</button>
+						<div class="team-content">
+							<div class="team-content__title">Специалист по упаковке
+							</div>
+							<div class="team-content__subtitle">Автор запоминающегося стиля 
+								наших батончиков.
+								
+								</div>
+						</div>
+					</li>
+					<li class="team-item">
+						<div class="team-member">
+							<img src="img/team/team3.jpg" alt="" class="team-member__img">
+						</div>
+						<button class="team__title">Кирилл Матросов</button>
+						<div class="team-content">
+							<div class="team-content__title">Оператор
+							</div>
+							<div class="team-content__subtitle">Разработал дизан
+								наушников beats solo 3.
+								</div>
+						</div>
+					</li>
+					<li class="team-item">
+						<div class="team-member">
+							<img src="img/team/team4.jpg" alt="" class="team-member__img">
+						</div>
+						<button class="team__title">Мила Рыжкова</button>
+						<div class="team-content">
+							<div class="team-content__title">PR, маркетинг</div>
+							<div class="team-content__subtitle">По всем вопросам сотрудничества 
+								и рекламы писать только Миле. 
+								</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
 		<section class="reviews">
 			<div class="container">
-				<p class="reviews__title">отзывы</p>
-				<div class="reviews-card">
-					<div class="reviews-card__photo"><img src="./img/review/belle (1).jpg" alt=""></div>
-					<div class="reviews-card-text">
-						<p class="reviews-card-text__title">Отличный звук
-						</p>
-						<p class="reviews-card-text__subtitle">Я ем малыми порциями, но часто. Это повышает мою
-							продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на
-							кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и
-							удобно. </p>
-						<p class="reviews-card-text__name">Билли Айлиш</p>
+				<h2 class="section__title">Отзывы</h2>
+
+					<div class="reviews__display">
+						<ul class="reviews__list">
+					<li class="reviews__item active" data-linked-with="one">
+						<div class="reviews__display-inner">
+							<div class="reviews__avatar">
+								<img src="img/review/belle (1).jpg" alt="" class="reviews__avatar-img">
+							</div>
+							<article class="reviews__content">
+								<h3 class="reviews__title">Отличный звук
+								</h3>
+								<div class="reviews__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </div>
+								<div class="reviews__author">Билли Айлиш</div>
+							</article>
+						</div>
+					</li>
+					<li class="reviews__item " data-linked-with="two">
+						<div class="reviews__display-inner">
+							<div class="reviews__avatar">
+								<img src="img/review/rew2.jpg" alt="" class="reviews__avatar-img">
+							</div>
+							<article class="reviews__content">
+								<h3 class="reviews__title">Крутой дизайн
+								</h3>
+								<div class="reviews__text">После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт.  </div>
+								<div class="reviews__author">Вадим Грачев
+								</div>
+							</article>
+						</div>
+					</li>
+					<li class="reviews__item" data-linked-with="three">
+						<div class="reviews__display-inner">
+							<div class="reviews__avatar">
+								<img src="img/review/rew3.jpg" alt="" class="reviews__avatar-img">
+							</div>
+							<article class="reviews__content">
+								<h3 class="reviews__title">На долго хватает заряда
+								</h3>
+								<div class="reviews__text">Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.</div>
+								<div class="reviews__author">Мария Орлова</div>
+							</article>
+						</div>
+					</li>
+					</ul>
 					</div>
-				</div>
-				<div class="reviews-people-icons">
-					<img class="people-icons__icon active" src="./img/review/belle (1).jpg" alt="">
-					<img class="people-icons__icon" src="./img/review/rew2.jpg" alt="">
-					<img class="people-icons__icon" src="./img/review/rew3.jpg" alt="">
-				</div>
+					<ul class="reviews__switcher">
+						<li class="reviews__switcher-item active">
+							<a href="" class=" reviews-switcher__link" data-open="one">
+								<img src="img/review/belle (1).jpg" alt="belly" class="reviews-switcher__pic">
+							</a>
+						</li>
+						<li class="reviews__switcher-item interactive-avatar">
+							<a href="" class="reviews-switcher__link" data-open="two">
+								<img src="img/review/rew2.jpg" alt="belly" class="reviews-switcher__pic">
+							</a>
+						</li>
+						<li class="reviews__switcher-item interactive-avatar">
+							<a href="" class="reviews-switcher__link" data-open="three">
+								<img src="img/review/rew3.jpg" alt="belly" class="reviews-switcher__pic">
+							</a>
+						</li>
+					</ul>
+				
 			</div>
 		</section>
 		<section class="form-section">
@@ -219,6 +361,7 @@
 								<div class="radio__visible"></div>
 								<div class="radio__title">Потребуется сдача</div>
 							</label>
+
 							<label class="radio">
 								<input type="radio" name="option" class="radio__elem">
 								<div class="radio__visible"></div>
@@ -242,9 +385,9 @@
 			</div>
 		</section>
 		<section class="contacts-footer">
-			<div class="map"><img src="./img/contacts/map (1).jpg" alt="" class="map_img"></div>	
-			<div class="container">
+			<div class="map"><img src="./img/contacts/map (1).jpg" alt="" class="map__img"></div>	
 			<footer class="footer">
+				<div class="container footer-container">
 				<div class="footer-contacts">
 					<p class="footer-contacts__text">
 						Москва, ул.Новый Арбат, д.31/12
@@ -275,17 +418,26 @@
 		</div>
 		</section>
 	</div>
-	<ul class="intro-list-items">
-		<li class="intro-list-items__item active"></li>
-		<li class="intro-list-items__item"></li>
-		<li class="intro-list-items__item"></li>
-		<li class="intro-list-items__item"></li>
-		<li class="intro-list-items__item"></li>
-		<li class="intro-list-items__item"></li>
-		<li class="intro-list-items__item"></li>
-		<li class="intro-list-items__item"></li>
-		<li class="intro-list-items__item"></li>
-	</ul>
+	<div class="overlay" id="overlay">
+		<!-- <div class="button_container" id="close">
+			  <span class="btn-close">X</span>
+		  </div> -->
+		<nav class="overlay-menu">
+		  <ul class="overlay-menu__list">
+			<li class="overlay-menu__item"><a class="overlay-menu__link" id="link" href="#">о нас</a></li>
+			<li class="overlay-menu__item"><a class="overlay-menu__link" href="#">Наушники</a></li>
+			<li class="overlay-menu__item"><a class="overlay-menu__link" href="#">Команда</a></li>
+			<li class="overlay-menu__item"><a class="overlay-menu__link" href="#">Цены</a></li>
+			<li class="overlay-menu__item"><a class="overlay-menu__link" href="#">Отзывы</a></li>
+			<li class="overlay-menu__item"><a class="overlay-menu__link" href="#">Как мы работаем</a></li>
+			<li class="overlay-menu__item"><a class="overlay-menu__link" href="#">контакты</a></li>
+		  </ul>
+		</nav>
+	  </div>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="js/tabs.js"></script>
+	  <script src="js/acco.js"></script>
+	  <script src="js/hamburger.js"></script>
 </body>
 
 </html>

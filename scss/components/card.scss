@@ -1,20 +1,108 @@
 .card {
+	height: 100vh;
 	@include height100();
 	background-color: #F8FAF9;
-}
-
-.card-wrapper {
-	@include flexbox();
 	padding: rem(95px) 0;
 }
 
-.card-left-block {
-	margin-right: rem(60px);
+.card-wrapper {
+	position: relative;
+	@include flexbox();
+
+
+	@include tablets {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
-.card-right-block {
+.product-slider {
 
-	&__button {
+	&__arrow {
+
+
+		border: solid black;
+		border-width: 0 3px 3px 0;
+		display: inline-block;
+		padding: 9px;
+		border-radius: 2px;
+	}
+
+	&__arrow-prev {
+		@include tablets {
+			left: 0;
+			bottom: 70%;
+		}
+
+		position: absolute;
+		left: 0;
+		bottom: 50%;
+		transform: rotate(135deg);
+		-webkit-transform: rotate(135deg);
+
+	}
+
+	&__arrow-next {
+		@include tablets {
+			right: 0;
+			bottom: 70%;
+		}
+
+		position: absolute;
+		right: 0;
+		bottom: 50%;
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+	}
+}
+
+
+
+.card-img-block {
+	margin-right: rem(60px);
+	width: 50%;
+	align-items: center;
+	justify-content: center;
+	display: inline-flex;
+
+	@include tablets {
+		margin-bottom: 45px;
+		margin-right: 0px;
+		width: 100%;
+	}
+
+	&__img {
+		align-items: center;
+		justify-content: center;
+		display: inline-flex;
+
+		@include tablets {
+			width: 306px;
+			height: 306px;
+		}
+	}
+
+}
+
+.card-block {
+	width: 50%;
+
+	@include tablets {
+		width: auto;
+		text-align: center;
+	}
+
+	&__ingredients {
+
+
+
+		position: relative;
+
+		@include tablets {
+			display: none;
+		}
+
 		margin-bottom: rem(25px);
 		display: flex;
 		align-items: center;
@@ -28,6 +116,7 @@
 
 	}
 
+
 	&__title {
 		font-family: Play;
 		font-weight: bold;
@@ -36,6 +125,10 @@
 		text-transform: uppercase;
 		color: #292929;
 		margin-bottom: rem(24px);
+
+		@include tablets {
+			font-size: rem(28px);
+		}
 	}
 
 	&__subtitle {
@@ -47,16 +140,69 @@
 	}
 }
 
-.card-right-block-options {
+.ingredients-components {
+	position: absolute;
+	left: -99999px;
+	top: 0;
+	opacity: 0;
+	width: rem(273px);
+	background-color: #D3D3D3;
+	padding: 18px 14px 24px 14px;
+	border-radius: 4px;
+	transition: opacity 0.3s;
+
+}
+
+.card-block__ingredients:hover .ingredients-components {
+	opacity: 1;
+	left: 100%;
+}
+
+
+
+
+
+.ingredients-components-item {
+	display: flex;
+	margin-bottom: 8px;
+
+	&__img {
+		margin-right: 12px;
+	}
+
+	&__text {
+		font-family: Play;
+		font-size: 16px;
+		line-height: 24px;
+
+		&.left {
+			margin-left: auto;
+		}
+	}
+
+
+}
+
+
+.card-block-options {
 	@include flexbox();
+
+	@include tablets {
+		align-items: center;
+		justify-content: center;
+
+	}
+
 }
 
 .card-options-card {
-	min-width: rem(104px);
+
+
 	margin-right: rem(44px);
 }
 
 .options-card {
+
 
 	&__title {
 		font-family: Play;
@@ -77,6 +223,13 @@
 }
 
 .card-price {
+
+	@include tablets {
+		align-items: center;
+		justify-content: center;
+
+	}
+
 	@include flexbox();
 
 	&__text {
@@ -103,4 +256,8 @@
 	text-transform: uppercase;
 	color: #ffff;
 	margin-left: rem(12px);
+
+	@include tablets {
+		margin-left: rem(30px);
+	}
 }
